@@ -1,0 +1,45 @@
+@use '__header';
+@use 'about';
+@use 'popou';
+
+* {
+    margin: 0;
+    padding: 0;
+    background-attachment: fixed;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.container {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    
+}
+
+body {
+    background-image: linear-gradient(to right top, #3131e7, #2840eb, #224dee, #2059f0, #2364f1, #0079f9, #008bfd, #009dff, #00b8ff, #00d1ff, #00e7fc, #5ffbf1);
+}
+
+a {
+    color: white;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    height: 100%;
+    box-sizing: border-box;
+    display: block;
+    background-color: #0e4166;
+    background-image: linear-gradient(to bottom, rgba(14, 65, 102, 0.86), #0e4166);
+}
