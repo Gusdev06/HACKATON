@@ -1,0 +1,144 @@
+@use '__header';
+@use 'about';
+@use 'popou';
+
+* {
+    margin: 0;
+    padding: 0;
+    background-attachment: fixed;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.container {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    
+}
+
+body {
+    background-image: linear-gradient(to right top, #3131e7, #2840eb, #224dee, #2059f0, #2364f1, #0079f9, #008bfd, #009dff, #00b8ff, #00d1ff, #00e7fc, #5ffbf1);
+}
+
+a {
+    color: white;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    height: 100%;
+    box-sizing: border-box;
+    display: block;
+    background-color: #acf10a;
+    background-image: linear-gradient(to bottom, rgba(69, 163, 230, 0.86), #0e4166);
+    border-radius: 10px;
+}
+
+.about {
+    max-width: 950px;
+    width: 100%;
+
+    z-index: 1;
+    
+    &__text {
+        justify-content: center;
+        align-items: center;
+        padding-right: 20px;
+        width: 100%;
+        color: rgb(253, 250, 250);
+        
+
+        h1 {
+            border-bottom: 3px solid; 
+            text-align: center;
+            padding: 20px;
+        }
+
+        
+
+    }
+}
+
+.section {
+    padding-top: 40px;
+    display: none;
+    margin: 0 auto;
+    color: #fff;
+    &--active {
+        display: flex;
+    }
+
+    &__dados {
+        display: flex;
+        
+        text-align: center;
+        margin: 0 auto;
+        
+        h1{
+            padding-bottom: 20px;
+        }
+
+        form {
+            
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        input {
+            border-radius: 4px;
+            text-align: center;
+            border-radius: 4px;
+            background-color: transparent;
+            border: none;
+            border-bottom: 3px rgb(248, 244, 244) solid;
+        }
+    }
+
+    &__location {
+        margin: 0 auto;
+        display: flex;
+        padding-top: 20px;
+        justify-content: center;
+        font-size: 40px;
+        text-align: center;
+    
+    }
+
+    &__calendar {
+            margin: 0 auto;
+
+            img {
+                max-width: 300px;
+                border-radius: 3px;
+            }
+    }
+}
+
+
+.button {
+    padding-top: 50px;
+    justify-content: center;
+    display: flex;
+
+    button {
+        padding: 20px;
+        background-color: green;
+        cursor: pointer;
+        color: #fff;
+    }
+    
+    
+}
+
