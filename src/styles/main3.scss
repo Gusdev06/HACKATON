@@ -138,7 +138,7 @@ svg {
 
     button {
         padding: 20px;
-        background-color: green;
+        background-color: rgb(7, 12, 7);
         cursor: pointer;
         color: #fff;
     }
@@ -269,5 +269,38 @@ svg {
         
         font-size: 40px;
     }
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+
+    h1 {
+        color: #fff;
+    }
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+
+    h1 {
+        color: #fff;
+    }
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+
+    h1 {
+        color: #fff;
+    }
+  }
+
+  h1 {
+    padding: 20px;
+    color: #fff;
 }
 

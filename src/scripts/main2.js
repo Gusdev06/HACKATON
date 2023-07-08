@@ -23,6 +23,20 @@
 //         });
 
 // Captura o botão "Próximo" pelo seu ID
+let popup = document.querySelector('.popup2')
+let closed = document.querySelector('.popup__message__close')
+let button = document.querySelector('.button')
+
+
+
+// button.onclick = function() {
+//     popup.classList.add('popup--active')
+
+// }
+
+
+
+
 var proximoBotao = document.querySelector('.proximo');
 
 // Captura todas as seções pelos seus IDs
@@ -44,4 +58,29 @@ proximoBotao.addEventListener('click', function() {
 
     // Mostra a próxima seção
     secoes[secaoAtual].style.display = 'flex';
-});
+
+    if (secaoAtual === secoes.length - 1) {
+        proximoBotao.style.backgroundColor = 'red';
+        proximoBotao.textContent = 'Finalizar';
+        
+
+        // Adiciona um novo evento de clique para o botão "Finalizar"
+        proximoBotao.removeEventListener('click', arguments.callee); // Remove o evento de clique anterior
+        proximoBotao.addEventListener('click', function() {
+            popup.classList.add('popup2--active')
+
+            closed.onclick = function() {
+                popup.classList.remove('popup2--active')
+            }
+
+
+        });
+    } else {
+        // Caso contrário, restaura as configurações padrão do botão
+        proximoBotao.style.backgroundColor = '';
+        proximoBotao.textContent = 'Próximo';
+    }
+
+
+})
+
